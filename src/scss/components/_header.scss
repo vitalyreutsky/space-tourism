@@ -1,0 +1,94 @@
+.header {
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0px 15px;
+  }
+
+  &__content {
+    max-width: 650px;
+  }
+
+  &__title {
+    font-family: $font-family-space;
+    font-weight: normal;
+    font-size: 60px;
+    span {
+      font-size: 110px;
+      line-height: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  &__descr {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 5%;
+    &-text {
+      width: 200px;
+      font-size: 14px;
+      line-height: 17px;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    transition: color 0.4s ease-in-out;
+
+    @include for-desktop {
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+}
+
+.phone {
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: auto;
+}
+
+.login {
+  margin-left: 22px;
+  margin-right: 130px;
+}
