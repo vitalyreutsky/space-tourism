@@ -1,17 +1,50 @@
 <section class="contacts">
   <div class="container">
     <div class="contacts__inner">
-      <div class="contacts__box"></div>
+      <div class="contacts__box">
+        <h2 class="contacts__title title">Контакты</h2>
+        <p class="contacts__box-text">
+          Оставь свои контакты и мы перезвоним тебе в ближайшие 100 лет!
+        </p>
+        <form action="#" class="contacts__form form">
+          <input
+            type="text"
+            name="Имя"
+            class="contacts__form-input input-reset form__input"
+            placeholder="ФИО"
+          />
+          <input
+            type="text"
+            name="Имя"
+            class="contacts__form-input input-reset form__input"
+            placeholder="Имя ребенка или внука (на всякий случай)"
+          />
+          <input
+            type="tel"
+            name="Телефон"
+            class="contacts__form-input input-reset form__input"
+            placeholder="Номер телефона"
+          />
+          <button class="btn btn-reset form__btn contacts__btn">
+            Забронировать полет
+          </button>
+        </form>
+      </div>
       <div class="contacts__quarantees">
-        <h2 class="title">Гарантии</h2>
-        <p class="contacts__quarantees">
+        <h2 class="contacts__title title">Гарантии</h2>
+        <p class="contacts__quarantees-text">
           Ни одна моя ракета еще не сделала удачную попытку, потому что в ней не
           было тебя! Будь первым! Колонизируй Марс! Илон Маск
         </p>
         <picture>
-          <source srcset="../img/ilon-mask.avif" type="image/avif">
-          <source srcset="../img/ilon-mask.webp" type="image/webp">
-          <img loading="lazy" src="../img/ilon-mask.png" class="image" width="" height="" alt="">
+          <source srcset="img/ilon-mask.avif" type="image/avif" />
+          <source srcset="img/ilon-mask.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            src="../img/ilon-mask.png"
+            class="contacts__quarantees-image image"
+            alt="Mask image"
+          />
         </picture>
       </div>
     </div>
