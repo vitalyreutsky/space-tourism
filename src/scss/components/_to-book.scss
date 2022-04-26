@@ -2,10 +2,20 @@
   background-image: url("../img/to-book-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   min-height: 100vh;
 
   &__text {
     font-size: 30px;
+
+    @include mobile {
+      font-size: 21px;
+    }
+  }
+
+  @include mobile {
+    .title {
+      font-size: 27px;
+    }
   }
 }

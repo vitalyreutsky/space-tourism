@@ -8,6 +8,14 @@
   &__inner {
     display: flex;
     justify-content: flex-end;
+
+    @include small-tablet {
+      display: block;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -20,13 +28,33 @@
         margin-bottom: 50px;
       }
     }
+
+    @include small-tablet {
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__nav {
-    .nav__list {
+    .footer__nav-list {
       flex-direction: column;
       width: 120px;
       margin-right: 100px;
+
+      @include small-tablet {
+        margin-bottom: 50px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    @include mobile {
+      margin: 0;
     }
   }
 
@@ -45,5 +73,9 @@
   &__nav-link,
   &__links-link {
     text-transform: uppercase;
+  }
+
+  @include mobile {
+    padding-bottom: 50px;
   }
 }

@@ -32,4 +32,48 @@
       font-size: 17px;
     }
   }
+
+  @include mobile {
+    padding-bottom: 50px;
+    .title {
+      font-size: 33px;
+    }
+  }
+}
+
+.how-to__box-list {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .how-to__box svg {
+    display: none;
+  }
+  .how-to__box-list {
+    display: block;
+  }
+  .how-to__box-item {
+    position: relative;
+    padding-bottom: 30px;
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 30px;
+    &:not(:last-child) {
+      border-left: 1px solid $color-white;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: $color-blue;
+    }
+
+    &:last-child::before {
+      left: -9px;
+    }
+  }
 }
