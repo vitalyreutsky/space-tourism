@@ -800,7 +800,7 @@ a {
   background-image: url("../img/to-book-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   min-height: 100vh;
 }
 .to-book__text {
