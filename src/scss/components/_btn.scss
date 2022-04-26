@@ -6,4 +6,13 @@
   width: 100%;
   border: 1px solid $color-white;
   padding: 15px 10px;
+
+  @include mobile {
+    padding: 10px;
+    font-size: 21px;
+  }
+
+  @include mobile-mini {
+    font-size: 17px;
+  }
 }

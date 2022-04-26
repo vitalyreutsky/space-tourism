@@ -1,0 +1,31 @@
+.burger {
+  @include burger;
+  display: none;
+  @include tablet {
+    display: block;
+    color: $color-white;
+
+    &__line {
+      height: 3px;
+      border-radius: 3px;
+    }
+
+    &::before {
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+    }
+
+    &::after {
+      width: 40px;
+      height: 3px;
+      border-radius: 3px;
+    }
+  }
+
+  &--active {
+    &::before {
+      width: 40px;
+    }
+  }
+}
