@@ -1,21 +1,6 @@
-// Данный файл - лишь собрание подключений готовых компонентов.
-// Рекомендуется создавать отдельный файл в папке components и подключать все там
-
 // Определение операционной системы на мобильных
 import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
-
-// Определение ширины экрана
-// import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
-// if (isDesktop()) {
-//   console.log('...')
-// }
-
-// Троттлинг функции (для ресайза, ввода в инпут, скролла и т.д.)
-// import { throttle } from './functions/throttle';
-// let yourFunc = () => { console.log('throttle') };
-// let func = throttle(yourFunc);
-// window.addEventListener('resize', func);
+console.log(mobileCheck());
 
 // Фикс фулскрин-блоков
 // import './functions/fix-fullheight';
@@ -47,13 +32,6 @@ console.log(mobileCheck())
 // import { createPopper, right} from '@popperjs/core';
 // createPopper(el, tooltip, {
 //   placement: 'right'
-// });
-
-// Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
 // });
 
 // Подключение анимаций по скроллу
