@@ -1,3 +1,49 @@
 .footer {
+  padding: 100px 0px 150px;
   background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__text {
+    width: 230px;
+    margin-right: 50px;
+    font-size: 21px;
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__nav {
+    .nav__list {
+      flex-direction: column;
+      width: 120px;
+      margin-right: 100px;
+    }
+  }
+
+  &__links-item,
+  &__nav-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-link,
+  &__links-link {
+    text-transform: uppercase;
+  }
 }
